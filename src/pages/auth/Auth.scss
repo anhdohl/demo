@@ -1,0 +1,28 @@
+.row-or-item {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    color: #737089;
+    padding-top: 14px;
+    padding-bottom: 14px;
+
+    &::after {
+        position: absolute;
+        content: ' ';
+        top: 50%;
+        left: 0;
+        width: calc(50% - 24px);
+        background-color: #F6F8FA;
+        height: 1px;
+    }
+
+    &::before {
+        position: absolute;
+        content: ' ';
+        top: 50%;
+        right: 0;
+        width: calc(50% - 24px);
+        background-color: #F6F8FA;
+        height: 1px;
+    }
+}
