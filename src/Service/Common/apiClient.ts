@@ -1,8 +1,5 @@
 import axios, { AxiosError, AxiosInstance, AxiosRequestConfig, AxiosResponse } from 'axios';
-import { Cookies } from 'react-cookie';
 import { statusCodes } from './statusCodes';
-
-const cookies = new Cookies();
 
 export interface AxiosRequestConfigExt extends AxiosRequestConfig {
   isRetryRequest: boolean | undefined;

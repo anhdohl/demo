@@ -14,23 +14,22 @@ import { TopNav } from '@/components/top-nav'
 import { UserNav } from '@/components/user-nav'
 import { RecentSales } from './components/recent-sales'
 import { Overview } from './components/overview'
-import InitSource from '../common/InitSource'
 
 export default function Dashboard() {
   return (
     <Layout>
       {/* ===== Top Heading ===== */}
-      {/* <Layout.Header>
+      <Layout.Header>
         <TopNav links={topNav} />
         <div className='ml-auto flex items-center space-x-4'>
           <Search />
           <ThemeSwitch />
           <UserNav />
         </div>
-      </Layout.Header> */}
+      </Layout.Header>
 
       {/* ===== Main ===== */}
-      {/* <Layout.Body>
+      <Layout.Body>
         <div className='mb-2 flex items-center justify-between space-y-2'>
           <h1 className='text-2xl font-bold tracking-tight'>Dashboard</h1>
           <div className='flex items-center space-x-2'>
@@ -204,7 +203,7 @@ export default function Dashboard() {
             </div>
           </TabsContent>
         </Tabs>
-      </Layout.Body> */}
+      </Layout.Body>
     </Layout>
   )
 }
