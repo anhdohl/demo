@@ -18,7 +18,6 @@ import { Overview } from './components/overview'
 export default function Dashboard() {
   return (
     <Layout>
-      {/* ===== Top Heading ===== */}
       <Layout.Header>
         <TopNav links={topNav} />
         <div className='ml-auto flex items-center space-x-4'>
